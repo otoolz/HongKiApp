@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		A009C6352819915400B47A93 /* HongkiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A009C6342819915400B47A93 /* HongkiApp.swift */; };
-		A009C6372819915400B47A93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A009C6362819915400B47A93 /* ContentView.swift */; };
 		A009C6392819915600B47A93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A009C6382819915600B47A93 /* Assets.xcassets */; };
 		A009C63C2819915600B47A93 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A009C63B2819915600B47A93 /* Preview Assets.xcassets */; };
+		A0CBFD7C281A54430072C7B7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CBFD7B281A54430072C7B7 /* HomeView.swift */; };
+		A0CBFD7E281A54630072C7B7 /* SwiftUIListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CBFD7D281A54630072C7B7 /* SwiftUIListView.swift */; };
+		A0CBFD80281A548D0072C7B7 /* SwiftListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CBFD7F281A548D0072C7B7 /* SwiftListView.swift */; };
+		A0CBFD82281A54B20072C7B7 /* GitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CBFD81281A54B20072C7B7 /* GitListView.swift */; };
+		A0CBFD84281A55140072C7B7 /* TabManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CBFD83281A55140072C7B7 /* TabManager.swift */; };
+		A0CBFD86281A58770072C7B7 /* HongkiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CBFD85281A58770072C7B7 /* HongkiView.swift */; };
+		A0CBFD88281A5B1A0072C7B7 /* BaseTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CBFD87281A5B1A0072C7B7 /* BaseTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A009C6312819915400B47A93 /* Hongki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hongki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A009C6342819915400B47A93 /* HongkiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HongkiApp.swift; sourceTree = "<group>"; };
-		A009C6362819915400B47A93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A009C6382819915600B47A93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A009C63B2819915600B47A93 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A0CBFD7B281A54430072C7B7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A0CBFD7D281A54630072C7B7 /* SwiftUIListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIListView.swift; sourceTree = "<group>"; };
+		A0CBFD7F281A548D0072C7B7 /* SwiftListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftListView.swift; sourceTree = "<group>"; };
+		A0CBFD81281A54B20072C7B7 /* GitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitListView.swift; sourceTree = "<group>"; };
+		A0CBFD83281A55140072C7B7 /* TabManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabManager.swift; sourceTree = "<group>"; };
+		A0CBFD85281A58770072C7B7 /* HongkiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HongkiView.swift; sourceTree = "<group>"; };
+		A0CBFD87281A5B1A0072C7B7 /* BaseTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,9 @@
 		A009C6332819915400B47A93 /* Hongki */ = {
 			isa = PBXGroup;
 			children = (
+				A0CBFD7A281A53F90072C7B7 /* View */,
 				A009C6342819915400B47A93 /* HongkiApp.swift */,
-				A009C6362819915400B47A93 /* ContentView.swift */,
+				A0CBFD83281A55140072C7B7 /* TabManager.swift */,
 				A009C6382819915600B47A93 /* Assets.xcassets */,
 				A009C63A2819915600B47A93 /* Preview Content */,
 			);
@@ -65,6 +78,19 @@
 				A009C63B2819915600B47A93 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A0CBFD7A281A53F90072C7B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A0CBFD7B281A54430072C7B7 /* HomeView.swift */,
+				A0CBFD7D281A54630072C7B7 /* SwiftUIListView.swift */,
+				A0CBFD7F281A548D0072C7B7 /* SwiftListView.swift */,
+				A0CBFD81281A54B20072C7B7 /* GitListView.swift */,
+				A0CBFD85281A58770072C7B7 /* HongkiView.swift */,
+				A0CBFD87281A5B1A0072C7B7 /* BaseTabView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +163,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A009C6372819915400B47A93 /* ContentView.swift in Sources */,
+				A0CBFD7C281A54430072C7B7 /* HomeView.swift in Sources */,
+				A0CBFD7E281A54630072C7B7 /* SwiftUIListView.swift in Sources */,
+				A0CBFD84281A55140072C7B7 /* TabManager.swift in Sources */,
+				A0CBFD82281A54B20072C7B7 /* GitListView.swift in Sources */,
+				A0CBFD88281A5B1A0072C7B7 /* BaseTabView.swift in Sources */,
 				A009C6352819915400B47A93 /* HongkiApp.swift in Sources */,
+				A0CBFD86281A58770072C7B7 /* HongkiView.swift in Sources */,
+				A0CBFD80281A548D0072C7B7 /* SwiftListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

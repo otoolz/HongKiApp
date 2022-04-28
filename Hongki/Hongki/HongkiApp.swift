@@ -11,7 +11,7 @@ import SwiftUI
 struct HongkiApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BaseTabView()
         }
     }
 }
