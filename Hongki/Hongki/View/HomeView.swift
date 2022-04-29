@@ -9,12 +9,18 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text("Home View!")
+        VStack {
+            TitleText(title: "NC1 Intro")
+            
+            Image(systemName: "leaf")
+                .frame(width: .infinity)
+            Spacer()
+        }
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        BaseTabView()
     }
 }
