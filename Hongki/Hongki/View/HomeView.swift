@@ -13,7 +13,7 @@ struct HomeView: View {
             TitleText(title: "NC1 Intro")
             
             Image(systemName: "leaf")
-                .frame(width: .infinity)
+            
             Spacer()
         }
     }

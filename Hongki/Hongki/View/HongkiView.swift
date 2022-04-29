@@ -10,12 +10,14 @@ import SwiftUI
 struct HongkiView: View {
     var body: some View {
         VStack {
-            HStack {
+            ZStack {
                 TitleText(title: "HongKi")
                 
                 Button {
                 } label: {
                     Image(systemName: "square.and.pencil")
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                        .padding(.trailing, 15)
                 }
             }
             
@@ -24,37 +26,40 @@ struct HongkiView: View {
                 .frame(width: 200, height: 200, alignment: .center)
             
             Group {
-                Text("life quotes")
+                Text("􁈏 " + "vivi가 보고있다" + "􁈐")
+                    .frame( maxWidth: .infinity, alignment: .center)
+                    .font(.title)
             
-                VStack {
-                    Text("background")
-                    Text("email")
-                    Text("phone")
+                VStack(alignment: .leading) {
+                    Text("TECH")
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(2)
+                    Text("kiwhong22@pos.idserve.net")
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(2)
+                    Text("010-7101-6000")
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(2)
                 }
+                .padding(.leading, 15)
+                .foregroundColor(Color("PureBlue"))
             
                 VStack {
                     Text("Achievement")
+                        .font(.title3)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.top, 5)
+                        .padding(.leading, 15)
+                    
                     HStack {
-                        VStack {
-                            Text("Swift")
-                            Image(systemName: "swift")
-                            Text("100%")
-                        }
-                        VStack {
-                            Text("SwiftUI")
-                            Image(systemName: "uiwindow.split.2x1")
-                            Text("100%")
-                        }
-                        VStack {
-                            Text("Git")
-                            Image(systemName: "app.connected.to.app.below.fill")
-                            Text("100%")
-                        }
+                        AchievementItem(title: "Swift", icon: "swift", achievement: 99)
+                        AchievementItem(title: "SwiftUI", icon: "uiwindow.split.2x1", achievement: 20)
+                        AchievementItem(title: "Git", icon: Tab.git.imageSystemName, achievement: 79)
                     }
                 }
             }
-            .frame(width: .infinity)
-            .padding(20)
+            .padding(5)
+            .frame(maxWidth: .infinity)
             .background(Color("WhiteSmoke"))
             .clipShape(RoundedRectangle(cornerRadius: 20))
             .padding(10)
@@ -64,8 +69,34 @@ struct HongkiView: View {
     }
 }
 
-struct HongkiView_Previews: PreviewProvider {
-    static var previews: some View {
-        HongkiView()
+struct AchievementItem: View {
+    let title: String
+    let icon: String
+    let achievement: Int
+    var body: some View {
+        VStack {
+            Image(systemName: icon)
+                .font(.largeTitle)
+            
+            Text(title)
+            
+            Text(String(achievement) + "%")
+                .font(.largeTitle)
+                .bold()
+                .foregroundColor(Color(color))
+        }
+        .padding()
     }
+    
+    var color: String {
+        if self.achievement > 80 {
+            return "Emerald"
+        } else if achievement < 40 {
+            return "TangerineTango"
+        } else {
+            return "Mimosa"
+        }
+        
+    }
+    
 }

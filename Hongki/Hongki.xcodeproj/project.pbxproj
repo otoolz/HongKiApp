@@ -15,6 +15,7 @@
 		A01E7263281BA54C00561268 /* GitListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01E7262281BA54C00561268 /* GitListManager.swift */; };
 		A01E7265281BB7D700561268 /* SwiftListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01E7264281BB7D700561268 /* SwiftListManager.swift */; };
 		A01E7267281BB7E900561268 /* SwiftUIListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01E7266281BB7E900561268 /* SwiftUIListManager.swift */; };
+		A0BA902E281C18EB00EB67CC /* HongkiEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BA902D281C18EB00EB67CC /* HongkiEditView.swift */; };
 		A0CBFD7C281A54430072C7B7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CBFD7B281A54430072C7B7 /* HomeView.swift */; };
 		A0CBFD7E281A54630072C7B7 /* SwiftUIListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CBFD7D281A54630072C7B7 /* SwiftUIListView.swift */; };
 		A0CBFD80281A548D0072C7B7 /* SwiftListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CBFD7F281A548D0072C7B7 /* SwiftListView.swift */; };
@@ -34,6 +35,7 @@
 		A01E7262281BA54C00561268 /* GitListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitListManager.swift; sourceTree = "<group>"; };
 		A01E7264281BB7D700561268 /* SwiftListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftListManager.swift; sourceTree = "<group>"; };
 		A01E7266281BB7E900561268 /* SwiftUIListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIListManager.swift; sourceTree = "<group>"; };
+		A0BA902D281C18EB00EB67CC /* HongkiEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HongkiEditView.swift; sourceTree = "<group>"; };
 		A0CBFD7B281A54430072C7B7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A0CBFD7D281A54630072C7B7 /* SwiftUIListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIListView.swift; sourceTree = "<group>"; };
 		A0CBFD7F281A548D0072C7B7 /* SwiftListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftListView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				A0CBFD87281A5B1A0072C7B7 /* BaseTabView.swift */,
 				A01E725E281B962800561268 /* TitleText.swift */,
 				A01E7260281B9FE500561268 /* RowView.swift */,
+				A0BA902D281C18EB00EB67CC /* HongkiEditView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0BA902E281C18EB00EB67CC /* HongkiEditView.swift in Sources */,
 				A0CBFD7C281A54430072C7B7 /* HomeView.swift in Sources */,
 				A01E7261281B9FE500561268 /* RowView.swift in Sources */,
 				A01E725F281B962800561268 /* TitleText.swift in Sources */,
