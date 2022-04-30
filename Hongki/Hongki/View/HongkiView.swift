@@ -8,17 +8,21 @@
 import SwiftUI
 
 struct HongkiView: View {
+    @State private var showingEditSheet: Bool = false
     var body: some View {
         VStack {
             ZStack {
                 TitleText(title: "HongKi")
                 
-                Button {
-                } label: {
+                Button(action: {
+                    showingEditSheet = true
+                }, label: {
                     Image(systemName: "square.and.pencil")
                         .frame(maxWidth: .infinity, alignment: .trailing)
                         .padding(.trailing, 15)
-                }
+                }).sheet(isPresented: $showingEditSheet, content: {
+                    HongkiEditView()
+                })
             }
             
             Image("HongkiMemoji")
@@ -26,9 +30,11 @@ struct HongkiView: View {
                 .frame(width: 200, height: 200, alignment: .center)
             
             Group {
-                Text("􁈏 " + "vivi가 보고있다" + "􁈐")
-                    .frame( maxWidth: .infinity, alignment: .center)
+                HStack {
+                    Text("􁈏 " + "vivi가 보고있다" + "􁈐")
+                        .frame( maxWidth: .infinity, alignment: .center)
                     .font(.title)
+                }
             
                 VStack(alignment: .leading) {
                     Text("TECH")
