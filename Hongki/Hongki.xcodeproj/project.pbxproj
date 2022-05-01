@@ -15,6 +15,8 @@
 		A01E7263281BA54C00561268 /* GitListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01E7262281BA54C00561268 /* GitListManager.swift */; };
 		A01E7265281BB7D700561268 /* SwiftListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01E7264281BB7D700561268 /* SwiftListManager.swift */; };
 		A01E7267281BB7E900561268 /* SwiftUIListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01E7266281BB7E900561268 /* SwiftUIListManager.swift */; };
+		A0248F40281EBEFD00AC6809 /* HongkiInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0248F3F281EBEFD00AC6809 /* HongkiInfo.swift */; };
+		A0248F43281ED1C400AC6809 /* HongkiInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0248F42281ED1C400AC6809 /* HongkiInfoViewModel.swift */; };
 		A0BA902E281C18EB00EB67CC /* HongkiEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BA902D281C18EB00EB67CC /* HongkiEditView.swift */; };
 		A0CBFD7C281A54430072C7B7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CBFD7B281A54430072C7B7 /* HomeView.swift */; };
 		A0CBFD7E281A54630072C7B7 /* SwiftUIListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CBFD7D281A54630072C7B7 /* SwiftUIListView.swift */; };
@@ -35,6 +37,8 @@
 		A01E7262281BA54C00561268 /* GitListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitListManager.swift; sourceTree = "<group>"; };
 		A01E7264281BB7D700561268 /* SwiftListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftListManager.swift; sourceTree = "<group>"; };
 		A01E7266281BB7E900561268 /* SwiftUIListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIListManager.swift; sourceTree = "<group>"; };
+		A0248F3F281EBEFD00AC6809 /* HongkiInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HongkiInfo.swift; sourceTree = "<group>"; };
+		A0248F42281ED1C400AC6809 /* HongkiInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HongkiInfoViewModel.swift; sourceTree = "<group>"; };
 		A0BA902D281C18EB00EB67CC /* HongkiEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HongkiEditView.swift; sourceTree = "<group>"; };
 		A0CBFD7B281A54430072C7B7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A0CBFD7D281A54630072C7B7 /* SwiftUIListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIListView.swift; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 		A009C6332819915400B47A93 /* Hongki */ = {
 			isa = PBXGroup;
 			children = (
+				A0248F41281EC66400AC6809 /* ViewModel */,
 				A0B4CB2E281D073D0091B5AC /* Model */,
 				A0CBFD7A281A53F90072C7B7 /* View */,
 				A009C6342819915400B47A93 /* HongkiApp.swift */,
@@ -92,6 +97,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A0248F41281EC66400AC6809 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A0248F42281ED1C400AC6809 /* HongkiInfoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		A0B4CB2E281D073D0091B5AC /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +112,7 @@
 				A01E7262281BA54C00561268 /* GitListManager.swift */,
 				A01E7264281BB7D700561268 /* SwiftListManager.swift */,
 				A01E7266281BB7E900561268 /* SwiftUIListManager.swift */,
+				A0248F3F281EBEFD00AC6809 /* HongkiInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -194,12 +208,14 @@
 				A01E7261281B9FE500561268 /* RowView.swift in Sources */,
 				A01E725F281B962800561268 /* TitleText.swift in Sources */,
 				A0CBFD7E281A54630072C7B7 /* SwiftUIListView.swift in Sources */,
+				A0248F40281EBEFD00AC6809 /* HongkiInfo.swift in Sources */,
 				A01E7267281BB7E900561268 /* SwiftUIListManager.swift in Sources */,
 				A0CBFD84281A55140072C7B7 /* TabManager.swift in Sources */,
 				A01E7265281BB7D700561268 /* SwiftListManager.swift in Sources */,
 				A01E7263281BA54C00561268 /* GitListManager.swift in Sources */,
 				A0CBFD82281A54B20072C7B7 /* GitListView.swift in Sources */,
 				A0CBFD88281A5B1A0072C7B7 /* BaseTabView.swift in Sources */,
+				A0248F43281ED1C400AC6809 /* HongkiInfoViewModel.swift in Sources */,
 				A009C6352819915400B47A93 /* HongkiApp.swift in Sources */,
 				A0CBFD86281A58770072C7B7 /* HongkiView.swift in Sources */,
 				A0CBFD80281A548D0072C7B7 /* SwiftListView.swift in Sources */,

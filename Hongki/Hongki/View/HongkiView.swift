@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct HongkiView: View {
+    @StateObject var hongkiVM = HongkiInfoViewModel()
     @State private var showingEditSheet: Bool = false
+    
     var body: some View {
         VStack {
             ZStack {
@@ -21,7 +23,7 @@ struct HongkiView: View {
                         .frame(maxWidth: .infinity, alignment: .trailing)
                         .padding(.trailing, 15)
                 }).sheet(isPresented: $showingEditSheet, content: {
-                    HongkiEditView()
+                    HongkiEditView(hongkiVM: hongkiVM, showingEditSheet: $showingEditSheet)
                 })
             }
             
@@ -31,19 +33,23 @@ struct HongkiView: View {
             
             Group {
                 HStack {
-                    Text("􁈏 " + "vivi가 보고있다" + "􁈐")
+                    Image(systemName: "quote.opening")
+                        .padding(.leading, 10)
+                    Text(hongkiVM.info.quotes)
                         .frame( maxWidth: .infinity, alignment: .center)
                     .font(.title)
+                    Image(systemName: "quote.closing")
+                        .padding(.trailing, 10)
                 }
             
                 VStack(alignment: .leading) {
-                    Text("TECH")
+                    Text(hongkiVM.info.background)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(2)
-                    Text("kiwhong22@pos.idserve.net")
+                    Text(hongkiVM.info.email)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(2)
-                    Text("010-7101-6000")
+                    Text(hongkiVM.info.phoneNum)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(2)
                 }
@@ -60,11 +66,11 @@ struct HongkiView: View {
                     Divider()
                     
                     HStack {
-                        AchievementItem(title: "Swift", icon: "swift", achievement: 99)
+                        AchievementItem(title: "Swift", icon: Tab.swift.imageSystemName, achievement: hongkiVM.info.swiftAchievement)
                         Divider()
-                        AchievementItem(title: "SwiftUI", icon: "uiwindow.split.2x1", achievement: 20)
+                        AchievementItem(title: "SwiftUI", icon: Tab.swiftUI.imageSystemName, achievement: hongkiVM.info.swiftUIAchievement)
                         Divider()
-                        AchievementItem(title: "Git", icon: Tab.git.imageSystemName, achievement: 79)
+                        AchievementItem(title: "Git", icon: Tab.git.imageSystemName, achievement: hongkiVM.info.gitAchievement)
                     }
                 }
             }
@@ -82,20 +88,27 @@ struct HongkiView: View {
 struct AchievementItem: View {
     let title: String
     let icon: String
-    let achievement: Int
+    let achievement: Double
     var body: some View {
+        Spacer()
         VStack {
             Image(systemName: icon)
                 .font(.largeTitle)
             
             Text(title)
             
-            Text(String(achievement) + "%")
-                .font(.largeTitle)
-                .bold()
-                .foregroundColor(Color(color))
+            HStack {
+                Text(String(Int(achievement)))
+                    .bold()
+                    .padding(0)
+                    .font(.largeTitle)
+                    .foregroundColor(Color(color))
+                Text("%")
+                    .padding(0)
+                    .foregroundColor(Color("BlackCharcoal"))
+            }
         }
-        .padding()
+        Spacer()
     }
     
     var color: String {

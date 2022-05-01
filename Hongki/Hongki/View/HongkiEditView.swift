@@ -8,21 +8,29 @@
 import SwiftUI
 
 struct HongkiEditView: View {
-    @State var quotes: String = "vivi가 보고있다"
-    @State var email: String = "kiwhong22@pos.idserve.net"
-    @State var phoneNum: String = "010-1234-5678"
-    @State var swiftAchievement: Double = 10
-    @State var swiftUIAchievement: Double = 10
-    @State var gitAchievement: Double = 10
-    @State var pickBackground: Background = Background.tech
+    @ObservedObject var hongkiVM: HongkiInfoViewModel
+    @Binding var showingEditSheet: Bool
+    
+    let backgrounds: [String] = ["TECH", "DESIGN", "DOMAIN"]
     
     var body: some View {
         VStack {
-            TitleText(title: "HongKi Edit")
+            ZStack {
+                TitleText(title: "HongKi Edit")
+                
+                Button(action: {
+                    showingEditSheet.toggle()
+                }, label: {
+                    Text("done")
+                        .padding(.trailing, 10)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                })
+            }
+            
             VStack {
                 TitleText(title: "Life Quotes")
                     .frame(maxWidth: .infinity, alignment: .leading)
-                TextField(quotes, text: $quotes)
+                TextField(hongkiVM.info.quotes, text: $hongkiVM.info.quotes)
                     .padding(.leading, 10)
             }
             .padding(.bottom, 5)
@@ -33,20 +41,20 @@ struct HongkiEditView: View {
                     TitleText(title: "Background")
                         .frame(maxWidth: .infinity, alignment: .leading)
                     
-                    Text(pickBackground.value)
+                    Text(hongkiVM.info.background)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.leading, 10)
                 }
                 
                 Menu(content: {
-                    Picker(selection: $pickBackground, label: Text("BackgroundPicker")) {
-                        ForEach(Background.allCases, id: \.self) { item in
-                            Text(item.value)
+                    Picker(selection: $hongkiVM.info.background, label: Text("BackgroundPicker")) {
+                        ForEach(backgrounds, id: \.self) { item in
+                            Text(item)
                         }
                     }
                 }, label: {
                     HStack {
-                        Text(pickBackground.value)
+                        Text(hongkiVM.info.background)
                         Image(systemName: "arrowtriangle.down.fill")
                     }
                     .padding()
@@ -58,7 +66,7 @@ struct HongkiEditView: View {
             VStack {
                 TitleText(title: "e-mail")
                     .frame(maxWidth: .infinity, alignment: .leading)
-                TextField(email, text: $email)
+                TextField(hongkiVM.info.email, text: $hongkiVM.info.email)
                     .padding(.leading, 10)
             }
             .padding(.bottom, 5)
@@ -67,7 +75,7 @@ struct HongkiEditView: View {
             VStack {
                 TitleText(title: "Phone Number")
                     .frame(maxWidth: .infinity, alignment: .leading)
-                TextField(phoneNum, text: $phoneNum)
+                TextField(hongkiVM.info.phoneNum, text: $hongkiVM.info.phoneNum)
                     .padding(.leading, 10)
             }
             .padding(.bottom, 5)
@@ -76,35 +84,69 @@ struct HongkiEditView: View {
             VStack {
                 TitleText(title: "Achievement")
                     .frame(maxWidth: .infinity, alignment: .leading)
-            
-                AchievemnetRowView(item: Tab.swift, achievement: swiftAchievement)
                 
-                AchievemnetRowView(item: Tab.swiftUI, achievement: swiftUIAchievement)
+                HStack {
+                    Image(systemName: Tab.swift.imageSystemName)
+                    Text(Tab.swift.title)
+                    Text("\(Int(hongkiVM.info.swiftAchievement))%")
+                }
                 
-                AchievemnetRowView(item: Tab.git, achievement: gitAchievement)
+                Slider(value: $hongkiVM.info.swiftAchievement, in: 0...100, label: {
+                    Text(Tab.swift.title)
+                    }, minimumValueLabel: {
+                        Text("0")
+                    }, maximumValueLabel: {
+                        Text("100")
+                })
+                .padding(.leading, 15)
+                .padding(.trailing, 15)
+                
+                HStack {
+                    Image(systemName: Tab.swiftUI.imageSystemName)
+                    Text(Tab.swiftUI.title)
+                    Text("\(Int(hongkiVM.info.swiftUIAchievement))%")
+                }
+                
+                Slider(value: $hongkiVM.info.swiftUIAchievement, in: 0...100, label: {
+                    Text(Tab.swiftUI.title)
+                    }, minimumValueLabel: {
+                        Text("0")
+                    }, maximumValueLabel: {
+                        Text("100")
+                })
+                .padding(.leading, 15)
+                .padding(.trailing, 15)
+                
+                HStack {
+                    Image(systemName: Tab.git.imageSystemName)
+                    Text(Tab.git.title)
+                    Text("\(Int(hongkiVM.info.gitAchievement))%")
+                }
+                
+                Slider(value: $hongkiVM.info.gitAchievement, in: 0...100, label: {
+                    Text(Tab.git.title)
+                    }, minimumValueLabel: {
+                        Text("0")
+                    }, maximumValueLabel: {
+                        Text("100")
+                })
+                .padding(.leading, 15)
+                .padding(.trailing, 15)
+                /*
+                AchievemnetRowView(item: Tab.swiftUI, achievement: hongkiVM.info.swiftUIAchievement)
+                
+                AchievemnetRowView(item: Tab.git, achievement: hongkiVM.info.gitAchievement)*/
                 Spacer()
             }
         }
     }
 }
-
-enum Background: CaseIterable {
-    case tech
-    case design
-    case domain
-    
-    var value: String {
-        switch self {
-        case .tech: return "TECH"
-        case .design: return "DESIGN"
-        case .domain: return "DOMAIN"
-        }
-    }
-}
-
+/*
 struct AchievemnetRowView: View {
     let item: Tab
-    @State var achievement: Double
+    @ObservedObject var achievement
+    // HongkiVM에서 각 achievement만 바꾸는데
+    // HongkiVM 전체를 관찰할 필요가 있을까?
     
     var body: some View {
         
@@ -125,9 +167,9 @@ struct AchievemnetRowView: View {
         .padding(.trailing, 15)
     }
 }
-
+*/
 struct HongkiEditView_Previews: PreviewProvider {
     static var previews: some View {
-        HongkiEditView()
+        BaseTabView()
     }
 }
