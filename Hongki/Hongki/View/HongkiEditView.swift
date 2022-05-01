@@ -14,6 +14,7 @@ struct HongkiEditView: View {
     @State var swiftAchievement: Double = 10
     @State var swiftUIAchievement: Double = 10
     @State var gitAchievement: Double = 10
+    @State var pickBackground: Background = Background.tech
     
     var body: some View {
         VStack {
@@ -24,13 +25,35 @@ struct HongkiEditView: View {
                 TextField(quotes, text: $quotes)
                     .padding(.leading, 10)
             }
+            .padding(.bottom, 5)
+            Divider()
             
             HStack {
                 VStack {
-                TitleText(title: "Background")
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                    TitleText(title: "Background")
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    
+                    Text(pickBackground.value)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.leading, 10)
                 }
+                
+                Menu(content: {
+                    Picker(selection: $pickBackground, label: Text("BackgroundPicker")) {
+                        ForEach(Background.allCases, id: \.self) { item in
+                            Text(item.value)
+                        }
+                    }
+                }, label: {
+                    HStack {
+                        Text(pickBackground.value)
+                        Image(systemName: "arrowtriangle.down.fill")
+                    }
+                    .padding()
+                })
             }
+            .padding(.bottom, 5)
+            Divider()
             
             VStack {
                 TitleText(title: "e-mail")
@@ -38,6 +61,8 @@ struct HongkiEditView: View {
                 TextField(email, text: $email)
                     .padding(.leading, 10)
             }
+            .padding(.bottom, 5)
+            Divider()
             
             VStack {
                 TitleText(title: "Phone Number")
@@ -45,6 +70,8 @@ struct HongkiEditView: View {
                 TextField(phoneNum, text: $phoneNum)
                     .padding(.leading, 10)
             }
+            .padding(.bottom, 5)
+            Divider()
             
             VStack {
                 TitleText(title: "Achievement")
@@ -57,6 +84,20 @@ struct HongkiEditView: View {
                 AchievemnetRowView(item: Tab.git, achievement: gitAchievement)
                 Spacer()
             }
+        }
+    }
+}
+
+enum Background: CaseIterable {
+    case tech
+    case design
+    case domain
+    
+    var value: String {
+        switch self {
+        case .tech: return "TECH"
+        case .design: return "DESIGN"
+        case .domain: return "DOMAIN"
         }
     }
 }

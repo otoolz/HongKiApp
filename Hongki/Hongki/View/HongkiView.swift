@@ -57,9 +57,13 @@ struct HongkiView: View {
                         .padding(.top, 5)
                         .padding(.leading, 15)
                     
+                    Divider()
+                    
                     HStack {
                         AchievementItem(title: "Swift", icon: "swift", achievement: 99)
+                        Divider()
                         AchievementItem(title: "SwiftUI", icon: "uiwindow.split.2x1", achievement: 20)
+                        Divider()
                         AchievementItem(title: "Git", icon: Tab.git.imageSystemName, achievement: 79)
                     }
                 }
