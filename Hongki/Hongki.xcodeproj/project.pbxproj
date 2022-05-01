@@ -78,10 +78,6 @@
 				A0B4CB2E281D073D0091B5AC /* Model */,
 				A0CBFD7A281A53F90072C7B7 /* View */,
 				A009C6342819915400B47A93 /* HongkiApp.swift */,
-				A0CBFD83281A55140072C7B7 /* TabManager.swift */,
-				A01E7262281BA54C00561268 /* GitListManager.swift */,
-				A01E7264281BB7D700561268 /* SwiftListManager.swift */,
-				A01E7266281BB7E900561268 /* SwiftUIListManager.swift */,
 				A009C6382819915600B47A93 /* Assets.xcassets */,
 				A009C63A2819915600B47A93 /* Preview Content */,
 			);
@@ -96,17 +92,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		A0B4CB2D281D01560091B5AC /* HomeViewGroup */ = {
-			isa = PBXGroup;
-			children = (
-				A0CBFD7B281A54430072C7B7 /* HomeView.swift */,
-			);
-			path = HomeViewGroup;
-			sourceTree = "<group>";
-		};
 		A0B4CB2E281D073D0091B5AC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A0CBFD83281A55140072C7B7 /* TabManager.swift */,
+				A01E7262281BA54C00561268 /* GitListManager.swift */,
+				A01E7264281BB7D700561268 /* SwiftListManager.swift */,
+				A01E7266281BB7E900561268 /* SwiftUIListManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -114,7 +106,7 @@
 		A0CBFD7A281A53F90072C7B7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A0B4CB2D281D01560091B5AC /* HomeViewGroup */,
+				A0CBFD7B281A54430072C7B7 /* HomeView.swift */,
 				A0CBFD7D281A54630072C7B7 /* SwiftUIListView.swift */,
 				A0CBFD7F281A548D0072C7B7 /* SwiftListView.swift */,
 				A0CBFD81281A54B20072C7B7 /* GitListView.swift */,
@@ -339,6 +331,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hongki/Preview Content\"";
+				DEVELOPMENT_TEAM = 8PCQ932FR3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -367,6 +360,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hongki/Preview Content\"";
+				DEVELOPMENT_TEAM = 8PCQ932FR3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

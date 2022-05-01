@@ -29,6 +29,7 @@ struct HomeView: View {
                         .padding(.leading, 10)
                     Spacer()
                 }
+                
                 VStack {
                     Image("Swift")
                         .resizable()
