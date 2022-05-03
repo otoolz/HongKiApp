@@ -11,7 +11,7 @@ struct GitDetailView: View {
     let detailTitle: String
     var body: some View {
         Image(detailTitle)
-            .scaledToFill()
+            .scaledToFit()
     }
 }
 

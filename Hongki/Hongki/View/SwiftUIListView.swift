@@ -17,8 +17,9 @@ struct SwiftUIListView: View {
                     ForEach(SwiftUI.allCases, id:\.self) { SwiftUIRow in
                         NavigationLink {
                           //   TestView()
-                            PickerDetailView()
+                            SwiftUIDetailView(row: SwiftUIRow)
                                 .navigationTitle(SwiftUIRow.title)
+                                .navigationBarTitleDisplayMode(.inline)
                         } label: {
                             RowView(iconName: SwiftUIRow.iconName, title:   SwiftUIRow.title, description: SwiftUIRow.description)
                         }

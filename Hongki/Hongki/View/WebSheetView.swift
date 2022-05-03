@@ -8,9 +8,26 @@
 import SwiftUI
 import WebKit
 
-struct WebView: UIViewRepresentable {
-    
+struct WebSheetView: View {
     @Binding var isSheet:Bool
+    var url: String
+    
+    var body: some View {
+        VStack {
+            Button(action: {
+                isSheet.toggle()
+            }, label: {
+                Text("done")
+                    .frame(maxWidth: .infinity, alignment: .trailing)
+                    .padding(.trailing, 20)
+            })
+            .padding()
+            LoadWebView(urlToLoad: url)
+        }
+    }
+}
+struct LoadWebView: UIViewRepresentable {
+    
     var urlToLoad: String
     
     func makeUIView(context: Context) -> WKWebView {

@@ -15,11 +15,18 @@
 		A01E7263281BA54C00561268 /* GitListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01E7262281BA54C00561268 /* GitListManager.swift */; };
 		A01E7265281BB7D700561268 /* SwiftListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01E7264281BB7D700561268 /* SwiftListManager.swift */; };
 		A01E7267281BB7E900561268 /* SwiftUIListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01E7266281BB7E900561268 /* SwiftUIListManager.swift */; };
-		A0217E58281F974200A29A43 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0217E57281F974200A29A43 /* TestView.swift */; };
 		A0248F40281EBEFD00AC6809 /* HongkiInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0248F3F281EBEFD00AC6809 /* HongkiInfo.swift */; };
 		A0248F43281ED1C400AC6809 /* HongkiInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0248F42281ED1C400AC6809 /* HongkiInfoViewModel.swift */; };
-		A0B3439A281FE40700CB1E13 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B34399281FE40700CB1E13 /* WebView.swift */; };
-		A0B3439E281FFC5500CB1E13 /* PickerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3439D281FFC5500CB1E13 /* PickerDetailView.swift */; };
+		A08FD87B2821888A00B3E349 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08FD87A2821888A00B3E349 /* PickerView.swift */; };
+		A08FD87D2821901A00B3E349 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08FD87C2821901A00B3E349 /* DatePickerView.swift */; };
+		A08FD87F2821903500B3E349 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08FD87E2821903500B3E349 /* ColorPickerView.swift */; };
+		A08FD8812821905E00B3E349 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08FD8802821905E00B3E349 /* ButtonView.swift */; };
+		A08FD8832821907200B3E349 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08FD8822821907200B3E349 /* SliderView.swift */; };
+		A08FD8852821907C00B3E349 /* StepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08FD8842821907C00B3E349 /* StepperView.swift */; };
+		A08FD8872821908B00B3E349 /* NavigationLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08FD8862821908B00B3E349 /* NavigationLinkView.swift */; };
+		A08FD8892821909800B3E349 /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08FD8882821909800B3E349 /* LinkView.swift */; };
+		A0B3439A281FE40700CB1E13 /* WebSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B34399281FE40700CB1E13 /* WebSheetView.swift */; };
+		A0B3439E281FFC5500CB1E13 /* SwiftUIDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3439D281FFC5500CB1E13 /* SwiftUIDetailView.swift */; };
 		A0BA902E281C18EB00EB67CC /* HongkiEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BA902D281C18EB00EB67CC /* HongkiEditView.swift */; };
 		A0CBFD7C281A54430072C7B7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CBFD7B281A54430072C7B7 /* HomeView.swift */; };
 		A0CBFD7E281A54630072C7B7 /* SwiftUIListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CBFD7D281A54630072C7B7 /* SwiftUIListView.swift */; };
@@ -41,11 +48,18 @@
 		A01E7262281BA54C00561268 /* GitListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitListManager.swift; sourceTree = "<group>"; };
 		A01E7264281BB7D700561268 /* SwiftListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftListManager.swift; sourceTree = "<group>"; };
 		A01E7266281BB7E900561268 /* SwiftUIListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIListManager.swift; sourceTree = "<group>"; };
-		A0217E57281F974200A29A43 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		A0248F3F281EBEFD00AC6809 /* HongkiInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HongkiInfo.swift; sourceTree = "<group>"; };
 		A0248F42281ED1C400AC6809 /* HongkiInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HongkiInfoViewModel.swift; sourceTree = "<group>"; };
-		A0B34399281FE40700CB1E13 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
-		A0B3439D281FFC5500CB1E13 /* PickerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDetailView.swift; sourceTree = "<group>"; };
+		A08FD87A2821888A00B3E349 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		A08FD87C2821901A00B3E349 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		A08FD87E2821903500B3E349 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		A08FD8802821905E00B3E349 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		A08FD8822821907200B3E349 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		A08FD8842821907C00B3E349 /* StepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperView.swift; sourceTree = "<group>"; };
+		A08FD8862821908B00B3E349 /* NavigationLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkView.swift; sourceTree = "<group>"; };
+		A08FD8882821909800B3E349 /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
+		A0B34399281FE40700CB1E13 /* WebSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSheetView.swift; sourceTree = "<group>"; };
+		A0B3439D281FFC5500CB1E13 /* SwiftUIDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDetailView.swift; sourceTree = "<group>"; };
 		A0BA902D281C18EB00EB67CC /* HongkiEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HongkiEditView.swift; sourceTree = "<group>"; };
 		A0CBFD7B281A54430072C7B7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A0CBFD7D281A54630072C7B7 /* SwiftUIListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIListView.swift; sourceTree = "<group>"; };
@@ -116,7 +130,15 @@
 		A0B3439C281FF10400CB1E13 /* SwiftUIDetailView */ = {
 			isa = PBXGroup;
 			children = (
-				A0B3439D281FFC5500CB1E13 /* PickerDetailView.swift */,
+				A0B3439D281FFC5500CB1E13 /* SwiftUIDetailView.swift */,
+				A08FD87A2821888A00B3E349 /* PickerView.swift */,
+				A08FD87C2821901A00B3E349 /* DatePickerView.swift */,
+				A08FD87E2821903500B3E349 /* ColorPickerView.swift */,
+				A08FD8802821905E00B3E349 /* ButtonView.swift */,
+				A08FD8822821907200B3E349 /* SliderView.swift */,
+				A08FD8842821907C00B3E349 /* StepperView.swift */,
+				A08FD8862821908B00B3E349 /* NavigationLinkView.swift */,
+				A08FD8882821909800B3E349 /* LinkView.swift */,
 			);
 			path = SwiftUIDetailView;
 			sourceTree = "<group>";
@@ -147,8 +169,7 @@
 				A0CBFD87281A5B1A0072C7B7 /* BaseTabView.swift */,
 				A01E725E281B962800561268 /* TitleText.swift */,
 				A01E7260281B9FE500561268 /* RowView.swift */,
-				A0217E57281F974200A29A43 /* TestView.swift */,
-				A0B34399281FE40700CB1E13 /* WebView.swift */,
+				A0B34399281FE40700CB1E13 /* WebSheetView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -229,18 +250,25 @@
 				A01E725F281B962800561268 /* TitleText.swift in Sources */,
 				A0E57AA42820F3A400A5363E /* GitDetailView.swift in Sources */,
 				A0CBFD7E281A54630072C7B7 /* SwiftUIListView.swift in Sources */,
+				A08FD8812821905E00B3E349 /* ButtonView.swift in Sources */,
 				A0248F40281EBEFD00AC6809 /* HongkiInfo.swift in Sources */,
-				A0B3439E281FFC5500CB1E13 /* PickerDetailView.swift in Sources */,
+				A0B3439E281FFC5500CB1E13 /* SwiftUIDetailView.swift in Sources */,
+				A08FD8832821907200B3E349 /* SliderView.swift in Sources */,
+				A08FD87B2821888A00B3E349 /* PickerView.swift in Sources */,
+				A08FD8852821907C00B3E349 /* StepperView.swift in Sources */,
 				A01E7267281BB7E900561268 /* SwiftUIListManager.swift in Sources */,
 				A0CBFD84281A55140072C7B7 /* TabManager.swift in Sources */,
-				A0217E58281F974200A29A43 /* TestView.swift in Sources */,
 				A01E7265281BB7D700561268 /* SwiftListManager.swift in Sources */,
 				A01E7263281BA54C00561268 /* GitListManager.swift in Sources */,
+				A08FD8892821909800B3E349 /* LinkView.swift in Sources */,
 				A0CBFD82281A54B20072C7B7 /* GitListView.swift in Sources */,
 				A0CBFD88281A5B1A0072C7B7 /* BaseTabView.swift in Sources */,
-				A0B3439A281FE40700CB1E13 /* WebView.swift in Sources */,
+				A0B3439A281FE40700CB1E13 /* WebSheetView.swift in Sources */,
 				A0248F43281ED1C400AC6809 /* HongkiInfoViewModel.swift in Sources */,
 				A009C6352819915400B47A93 /* HongkiApp.swift in Sources */,
+				A08FD87F2821903500B3E349 /* ColorPickerView.swift in Sources */,
+				A08FD8872821908B00B3E349 /* NavigationLinkView.swift in Sources */,
+				A08FD87D2821901A00B3E349 /* DatePickerView.swift in Sources */,
 				A0CBFD86281A58770072C7B7 /* HongkiView.swift in Sources */,
 				A0CBFD80281A548D0072C7B7 /* SwiftListView.swift in Sources */,
 			);

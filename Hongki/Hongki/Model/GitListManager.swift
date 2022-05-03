@@ -29,7 +29,7 @@ enum Git: CaseIterable {
         case .mergingBranch : return "arrow.triangle.merge"
         case .rebasing : return "arrow.left.arrow.right"
         case .undoing : return "arrow.uturn.backward"
-        case .reviewRepo : return "eyes.inverse"
+        case .reviewRepo : return "eyes"
         case .stashing : return "shield.lefthalf.filled"
         case .synchronizing : return "arrow.triangle.2.circlepath.circle"
         }
