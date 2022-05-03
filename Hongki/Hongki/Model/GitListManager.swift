@@ -9,45 +9,42 @@ import SwiftUI
 
 
 enum Git: CaseIterable {
-    case setup
-    case startProject
+    case gitFlow
+    case start
     case makeChange
-    case basicConcept
     case branches
     case mergingBranch
     case rebasing
-    case undoingThings
+    case undoing
     case reviewRepo
     case stashing
     case synchronizing
     
     var iconName: String {
         switch self {
-        case .setup : return "mail.stack"
-        case .startProject : return "tray"
+        case .gitFlow : return "wind"
+        case .start : return "tray"
         case .makeChange : return "arrowshape.zigzag.right"
-        case .basicConcept : return "brain"
         case .branches : return "arrow.triangle.branch"
         case .mergingBranch : return "arrow.triangle.merge"
         case .rebasing : return "arrow.left.arrow.right"
-        case .undoingThings : return "arrow.uturn.backward"
-        case .reviewRepo : return "doc.text.magnifyingglass"
-        case .stashing : return "archivebox"
-        case .synchronizing : return "arrow.triangle.2.circlepath.camera"
+        case .undoing : return "arrow.uturn.backward"
+        case .reviewRepo : return "eyes.inverse"
+        case .stashing : return "shield.lefthalf.filled"
+        case .synchronizing : return "arrow.triangle.2.circlepath.circle"
         }
     }
     
     var title: String {
         switch self {
-        case .setup : return "Set Up"
-        case .startProject : return "Start a Project"
+        case .gitFlow : return "Git Flow"
+        case .start : return "Start a Project"
         case .makeChange : return "Make a Change"
-        case .basicConcept : return "Basic Concept"
         case .branches : return "Branch"
         case .mergingBranch : return "Merging branch"
         case .rebasing : return "Rebasing"
-        case .undoingThings : return "Undoing Things"
-        case .reviewRepo : return "Review my Repo"
+        case .undoing : return "Undoing Things"
+        case .reviewRepo : return "Review Repo"
         case .stashing : return "Stashing"
         case .synchronizing : return "Synchronizing"
         }
@@ -55,17 +52,31 @@ enum Git: CaseIterable {
     
     var description: String {
         switch self {
-        case .setup : return "How to set the name and email"
-        case .startProject : return "Create a local repo"
+        case .gitFlow : return "Branching workflows"
+        case .start : return "Create a local repo"
         case .makeChange : return "How to add a file and commit"
-        case .basicConcept : return "Basic git concept"
         case .branches : return "branch basic"
         case .mergingBranch : return "how to merge branch"
         case .rebasing : return "rebasing feature branch onto main"
-        case .undoingThings : return "how to undo git things"
-        case .reviewRepo : return "Review my Repo"
-        case .stashing : return "Store modified & staged changes"
-        case .synchronizing : return "how to synchronize git"
+        case .undoing : return "undoing you did things"
+        case .reviewRepo : return "review your repo"
+        case .stashing : return "git stashing"
+        case .synchronizing : return "repo synchronizing"
+        }
+    }
+    
+    var pageTitle: String {
+        switch self {
+        case .gitFlow : return "git_flow"
+        case .start : return "git_start"
+        case .makeChange : return "git_change"
+        case .branches : return "git_branch"
+        case .mergingBranch : return "git_merge"
+        case .rebasing : return "git_rebasing"
+        case .undoing : return "git_undoing"
+        case .reviewRepo : return "git_reviewRepo"
+        case .stashing : return "git_stashing"
+        case .synchronizing : return "git_synchronizing"
         }
     }
 }

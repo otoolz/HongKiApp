@@ -9,17 +9,26 @@ import SwiftUI
 
 struct SwiftListView: View {
     var body: some View {
-        VStack {
-            TitleText(title: "Swift")
+        NavigationView {
+            VStack {
             
-            List {
-                ForEach(Swift.allCases, id:\.self) { SwiftRow in
-                    RowView(iconName: SwiftRow.iconName, title: SwiftRow.title, description: SwiftRow.description)
+                TitleText(title: "Swift")
+            
+                List {
+                    ForEach(Swift.allCases, id:\.self) { SwiftRow in
+                        NavigationLink {
+                            TestView()
+                                .navigationTitle(SwiftRow.title)
+                                .navigationBarTitleDisplayMode(.inline)
+                        } label: {
+                            RowView(iconName: SwiftRow.iconName, title: SwiftRow.title, description: SwiftRow.description)
+                        }
+                    }
                 }
+                .listStyle(.plain)
+                Spacer()
             }
-            .listStyle(.plain)
-            
-            Spacer()
+            .navigationBarHidden(true)
         }
     }
 }

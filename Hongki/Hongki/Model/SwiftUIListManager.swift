@@ -14,7 +14,6 @@ enum SwiftUI: CaseIterable {
     case actionSheet
     case picker
     
-    
     var iconName: String {
         switch self {
         case .stack : return "square.stack.3d.up"
@@ -45,5 +44,4 @@ enum SwiftUI: CaseIterable {
         case .picker : return "Let's see Picker"
         }
     }
-    
 }

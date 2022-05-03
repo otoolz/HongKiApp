@@ -9,16 +9,25 @@ import SwiftUI
 
 struct GitListView: View {
     var body: some View {
-        VStack {
-            TitleText(title: "Git")
+        NavigationView {
+            VStack {
+                TitleText(title: "Git")
             
-            List {
-                ForEach(Git.allCases, id:\.self) { gitRow in
-                    RowView(iconName: gitRow.iconName, title: gitRow.title, description: gitRow.description)
+                List {
+                    ForEach(Git.allCases, id:\.self) { gitRow in
+                        NavigationLink {
+                            GitDetailView(detailTitle: gitRow.pageTitle)
+                                .navigationTitle(gitRow.title)
+                                .navigationBarTitleDisplayMode(.inline)
+                        } label: {
+                            RowView(iconName: gitRow.iconName, title: gitRow.title, description: gitRow.description)
+                        }
+                    }
                 }
+                .listStyle(.plain)
+                Spacer()
             }
-            .listStyle(.plain)
-            Spacer()
+            .navigationBarHidden(true)
         }
     }
 }

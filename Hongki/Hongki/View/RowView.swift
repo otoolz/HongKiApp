@@ -16,8 +16,8 @@ struct RowView: View {
         HStack {
             Image(systemName: iconName)
                 .padding(20)
-                .font(.largeTitle)
-                .frame(width: 70, height: 70, alignment: .center)
+                .font(.title)
+                .frame(width: 40, height: 40, alignment: .center)
                 .aspectRatio(contentMode: .fit)
                 .background(Color("WhiteSmoke"))
                 .clipShape(RoundedRectangle(cornerRadius: 10))
@@ -27,15 +27,13 @@ struct RowView: View {
                     .font(.headline)
                 Text(description)
                     .font(.caption)
-                Text("9 page")
-                    .font(.caption2)
                     .foregroundColor(.gray)
             }
-            .padding(.leading, 10)
+            .padding(.leading, 5)
             
             Spacer()
         }
-        .padding(10)
+        .padding(5)
     }
 }
 

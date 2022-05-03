@@ -9,17 +9,25 @@ import SwiftUI
 
 struct SwiftUIListView: View {
     var body: some View {
-        VStack {
-            TitleText(title: "SwiftUI")
+        NavigationView {
+            VStack {
+                TitleText(title: "SwiftUI")
             
-            List {
-                ForEach(SwiftUI.allCases, id:\.self) { SwiftUIRow in
-                    RowView(iconName: SwiftUIRow.iconName, title: SwiftUIRow.title, description: SwiftUIRow.description)
+                List {
+                    ForEach(SwiftUI.allCases, id:\.self) { SwiftUIRow in
+                        NavigationLink {
+                          //   TestView()
+                            PickerDetailView()
+                                .navigationTitle(SwiftUIRow.title)
+                        } label: {
+                            RowView(iconName: SwiftUIRow.iconName, title:   SwiftUIRow.title, description: SwiftUIRow.description)
+                        }
+                    }
                 }
+                .listStyle(.plain)
+                Spacer()
             }
-            .listStyle(.plain)
-            
-            Spacer()
+            .navigationBarHidden(true)
         }
     }
 }
