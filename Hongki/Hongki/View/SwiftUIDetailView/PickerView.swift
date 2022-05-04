@@ -11,6 +11,8 @@ struct PickerView: View {
     @State private var menuString: String = "Pick1"
     var body: some View {
         VStack {
+            Text("your pick : \(menuString)")
+                .frame(maxWidth: .infinity, alignment: .leading)
             Menu(content: {
                 Picker(selection: $menuString, label: Text("pickString")) {
                     ForEach(["Pick1", "Pick2", "Pick3"], id: \.self) { item in
@@ -21,7 +23,6 @@ struct PickerView: View {
                 Text(menuString)
             })
             .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(.leading, 20)
         }
     }
 }

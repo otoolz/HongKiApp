@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct StepperView: View {
+    @State private var stepperValue: Int = 0
+    @State private var limitedValue: Int = 0
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Stepper(value: $stepperValue, label: {
+            Text("stepper Value : \(stepperValue)")
+        })
+        
+        Divider()
+        
+        Stepper(value: $limitedValue, in: 0...5, label: {
+            Text("limited stepper Value(0-5) \n\(limitedValue)")
+        })
     }
 }
 

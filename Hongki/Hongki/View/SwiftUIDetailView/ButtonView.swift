@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct ButtonView: View {
+    @State private var countButton: Int = 0
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack {
+                Button(action: {
+                    countButton += 1
+                }, label: {
+                    Text("Up")
+            }).frame(maxWidth: .infinity, alignment: .leading)
+                    .buttonStyle(.borderedProminent)
+                
+                Text("count : \(String(countButton))")
+            }
+        }
     }
 }
 

@@ -10,23 +10,17 @@ import SwiftUI
 enum Swift: CaseIterable {
     case enumKeyword
     case colloectionType
-    case instanceMethod
-    case storedProperties
-    case computedProperties
-    case propertyWrappers
-    case typeProperties
-    case asyncAwait
+    case method
+    case properties
+    case concurrency
     
     var iconName: String {
         switch self {
         case .enumKeyword : return "greetingcard"
         case .colloectionType : return "books.vertical"
-        case .instanceMethod : return "cube"
-        case .storedProperties : return "tray.full"
-        case .computedProperties : return "gearshape.2"
-        case .propertyWrappers : return "shippingbox.circle"
-        case .typeProperties : return "scale.3d"
-        case .asyncAwait : return "clock.badge.exclamationmark.fill"
+        case .method : return "cube"
+        case .properties : return "shippingbox.circle"
+        case .concurrency : return "clock.badge.exclamationmark.fill"
         }
     }
     
@@ -34,12 +28,9 @@ enum Swift: CaseIterable {
         switch self {
         case .enumKeyword : return "Enumerations"
         case .colloectionType : return "CollectionType"
-        case .instanceMethod : return "InstanceMethod"
-        case .storedProperties : return "StoredProperties"
-        case .computedProperties : return "Computedproperties"
-        case .propertyWrappers : return "propertyWrappers"
-        case .typeProperties : return "TypeProperties"
-        case .asyncAwait : return "Async/Await"
+        case .method : return "InstanceMethod"
+        case .properties : return "Computedproperties"
+        case .concurrency : return "Async/Await"
         }
     }
     
@@ -47,12 +38,19 @@ enum Swift: CaseIterable {
         switch self {
         case .enumKeyword : return "Let's study Enumerations"
         case .colloectionType : return "Let's study CollectionType"
-        case .instanceMethod : return "Let's study InstanceMethod"
-        case .storedProperties : return "Let's study StoredProperties"
-        case .computedProperties : return "Let's study Computedproperties"
-        case .propertyWrappers : return "Let's study propertyWrappers"
-        case .typeProperties : return "Let's study TypeProperties"
-        case .asyncAwait : return "Let's study Async/Await"
+        case .method : return "Let's study InstanceMethod"
+        case .properties : return "Let's study Properties"
+        case .concurrency : return "Let's study Async/Await"
+        }
+    }
+    
+    var doc: String {
+        switch self {
+        case .enumKeyword : return "https://docs.swift.org/swift-book/LanguageGuide/Enumerations.html"
+        case .colloectionType : return "https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html"
+        case .method : return "https://docs.swift.org/swift-book/LanguageGuide/Methods.html"
+        case .properties : return "https://docs.swift.org/swift-book/LanguageGuide/Properties.html"
+        case .concurrency : return "https://docs.swift.org/swift-book/LanguageGuide/Concurrency.html"
         }
     }
 }

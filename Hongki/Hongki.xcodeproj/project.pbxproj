@@ -17,6 +17,8 @@
 		A01E7267281BB7E900561268 /* SwiftUIListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01E7266281BB7E900561268 /* SwiftUIListManager.swift */; };
 		A0248F40281EBEFD00AC6809 /* HongkiInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0248F3F281EBEFD00AC6809 /* HongkiInfo.swift */; };
 		A0248F43281ED1C400AC6809 /* HongkiInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0248F42281ED1C400AC6809 /* HongkiInfoViewModel.swift */; };
+		A04A7ED52822E0E300D3C1C5 /* TestVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04A7ED42822E0E300D3C1C5 /* TestVIew.swift */; };
+		A04A7ED72822F02F00D3C1C5 /* LoadWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04A7ED62822F02F00D3C1C5 /* LoadWebView.swift */; };
 		A08FD87B2821888A00B3E349 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08FD87A2821888A00B3E349 /* PickerView.swift */; };
 		A08FD87D2821901A00B3E349 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08FD87C2821901A00B3E349 /* DatePickerView.swift */; };
 		A08FD87F2821903500B3E349 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08FD87E2821903500B3E349 /* ColorPickerView.swift */; };
@@ -50,6 +52,8 @@
 		A01E7266281BB7E900561268 /* SwiftUIListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIListManager.swift; sourceTree = "<group>"; };
 		A0248F3F281EBEFD00AC6809 /* HongkiInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HongkiInfo.swift; sourceTree = "<group>"; };
 		A0248F42281ED1C400AC6809 /* HongkiInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HongkiInfoViewModel.swift; sourceTree = "<group>"; };
+		A04A7ED42822E0E300D3C1C5 /* TestVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVIew.swift; sourceTree = "<group>"; };
+		A04A7ED62822F02F00D3C1C5 /* LoadWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadWebView.swift; sourceTree = "<group>"; };
 		A08FD87A2821888A00B3E349 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		A08FD87C2821901A00B3E349 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		A08FD87E2821903500B3E349 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
@@ -130,6 +134,7 @@
 		A0B3439C281FF10400CB1E13 /* SwiftUIDetailView */ = {
 			isa = PBXGroup;
 			children = (
+				A0B34399281FE40700CB1E13 /* WebSheetView.swift */,
 				A0B3439D281FFC5500CB1E13 /* SwiftUIDetailView.swift */,
 				A08FD87A2821888A00B3E349 /* PickerView.swift */,
 				A08FD87C2821901A00B3E349 /* DatePickerView.swift */,
@@ -169,7 +174,8 @@
 				A0CBFD87281A5B1A0072C7B7 /* BaseTabView.swift */,
 				A01E725E281B962800561268 /* TitleText.swift */,
 				A01E7260281B9FE500561268 /* RowView.swift */,
-				A0B34399281FE40700CB1E13 /* WebSheetView.swift */,
+				A04A7ED42822E0E300D3C1C5 /* TestVIew.swift */,
+				A04A7ED62822F02F00D3C1C5 /* LoadWebView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -252,6 +258,7 @@
 				A0CBFD7E281A54630072C7B7 /* SwiftUIListView.swift in Sources */,
 				A08FD8812821905E00B3E349 /* ButtonView.swift in Sources */,
 				A0248F40281EBEFD00AC6809 /* HongkiInfo.swift in Sources */,
+				A04A7ED52822E0E300D3C1C5 /* TestVIew.swift in Sources */,
 				A0B3439E281FFC5500CB1E13 /* SwiftUIDetailView.swift in Sources */,
 				A08FD8832821907200B3E349 /* SliderView.swift in Sources */,
 				A08FD87B2821888A00B3E349 /* PickerView.swift in Sources */,
@@ -261,6 +268,7 @@
 				A01E7265281BB7D700561268 /* SwiftListManager.swift in Sources */,
 				A01E7263281BA54C00561268 /* GitListManager.swift in Sources */,
 				A08FD8892821909800B3E349 /* LinkView.swift in Sources */,
+				A04A7ED72822F02F00D3C1C5 /* LoadWebView.swift in Sources */,
 				A0CBFD82281A54B20072C7B7 /* GitListView.swift in Sources */,
 				A0CBFD88281A5B1A0072C7B7 /* BaseTabView.swift in Sources */,
 				A0B3439A281FE40700CB1E13 /* WebSheetView.swift in Sources */,

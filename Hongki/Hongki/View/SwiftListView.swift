@@ -17,7 +17,7 @@ struct SwiftListView: View {
                 List {
                     ForEach(Swift.allCases, id:\.self) { SwiftRow in
                         NavigationLink {
-                            GitDetailView(detailTitle: Git.branches.pageTitle)
+                            LoadWebView(urlToLoad: SwiftRow.doc)
                                 .navigationTitle(SwiftRow.title)
                                 .navigationBarTitleDisplayMode(.inline)
                         } label: {

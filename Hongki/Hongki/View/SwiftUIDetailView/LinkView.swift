@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct LinkView: View {
+//    @Environment(\.openURL) var openURL
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Link(destination: URL(string: "https://developer.apple.com")!, label: {
+            HStack {
+                Image(systemName: "applelogo")
+                Text("Apple Developer")
+            }
+        })
+       /*
+        Button("text") {
+            openURL(URL(string: "developer.apple.com")!)
+        }
+        */
     }
 }
 

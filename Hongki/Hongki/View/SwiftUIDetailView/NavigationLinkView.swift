@@ -9,7 +9,16 @@ import SwiftUI
 
 struct NavigationLinkView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        List {
+            ForEach(1..<5, id: \.self) { i in
+                NavigationLink(destination: {
+                    Text(String(i))
+                }, label: {
+                    Text("NavigationLink\(String(i))")
+                })
+            }
+        }
     }
 }
 

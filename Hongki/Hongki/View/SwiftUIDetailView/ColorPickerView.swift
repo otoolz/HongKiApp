@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct ColorPickerView: View {
+    @State private var pickedColor = Color.blue
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Rectangle()
+            .frame(width: 120, height: 120, alignment: .center)
+            .foregroundColor(pickedColor)
+        
+        ColorPicker("Pick Color", selection: $pickedColor)
+        
     }
 }
 
