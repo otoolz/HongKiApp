@@ -80,10 +80,9 @@ struct HomeView: View {
                         .padding(.leading, 30)
                     Spacer()
                 }
-                
             }
             .tabViewStyle(.page(indexDisplayMode: .always))
-        .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+            .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
         }
     }
 }
