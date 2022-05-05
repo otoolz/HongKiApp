@@ -29,6 +29,7 @@
 		A08FD8892821909800B3E349 /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08FD8882821909800B3E349 /* LinkView.swift */; };
 		A0B3439A281FE40700CB1E13 /* WebSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B34399281FE40700CB1E13 /* WebSheetView.swift */; };
 		A0B3439E281FFC5500CB1E13 /* SwiftUIDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3439D281FFC5500CB1E13 /* SwiftUIDetailView.swift */; };
+		A0B6F66228239F3B0011F2A8 /* hongki.json in Resources */ = {isa = PBXBuildFile; fileRef = A0B6F66128239F3B0011F2A8 /* hongki.json */; };
 		A0BA902E281C18EB00EB67CC /* HongkiEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BA902D281C18EB00EB67CC /* HongkiEditView.swift */; };
 		A0CBFD7C281A54430072C7B7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CBFD7B281A54430072C7B7 /* HomeView.swift */; };
 		A0CBFD7E281A54630072C7B7 /* SwiftUIListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CBFD7D281A54630072C7B7 /* SwiftUIListView.swift */; };
@@ -64,6 +65,7 @@
 		A08FD8882821909800B3E349 /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
 		A0B34399281FE40700CB1E13 /* WebSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSheetView.swift; sourceTree = "<group>"; };
 		A0B3439D281FFC5500CB1E13 /* SwiftUIDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDetailView.swift; sourceTree = "<group>"; };
+		A0B6F66128239F3B0011F2A8 /* hongki.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hongki.json; sourceTree = "<group>"; };
 		A0BA902D281C18EB00EB67CC /* HongkiEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HongkiEditView.swift; sourceTree = "<group>"; };
 		A0CBFD7B281A54430072C7B7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A0CBFD7D281A54630072C7B7 /* SwiftUIListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIListView.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 		A009C6332819915400B47A93 /* Hongki */ = {
 			isa = PBXGroup;
 			children = (
+				A0B6F66128239F3B0011F2A8 /* hongki.json */,
 				A0248F41281EC66400AC6809 /* ViewModel */,
 				A0B4CB2E281D073D0091B5AC /* Model */,
 				A0CBFD7A281A53F90072C7B7 /* View */,
@@ -239,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A009C63C2819915600B47A93 /* Preview Assets.xcassets in Resources */,
+				A0B6F66228239F3B0011F2A8 /* hongki.json in Resources */,
 				A009C6392819915600B47A93 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

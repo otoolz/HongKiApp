@@ -19,9 +19,10 @@ struct HongkiEditView: View {
                 TitleText(title: "HongKi Edit")
                 
                 Button(action: {
+                    hongkiVM.saveInfo()
                     showingEditSheet.toggle()
                 }, label: {
-                    Text("done")
+                    Text("save")
                         .padding(.trailing, 10)
                         .frame(maxWidth: .infinity, alignment: .trailing)
                 })
@@ -31,6 +32,7 @@ struct HongkiEditView: View {
                 TitleText(title: "Life Quotes")
                     .frame(maxWidth: .infinity, alignment: .leading)
                 TextField(hongkiVM.info.quotes, text: $hongkiVM.info.quotes)
+                    .foregroundColor(.gray)
                     .padding(.leading, 10)
             }
             .padding(.bottom, 5)
@@ -42,6 +44,7 @@ struct HongkiEditView: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                     
                     Text(hongkiVM.info.background)
+                        .foregroundColor(.gray)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.leading, 10)
                 }
@@ -67,6 +70,7 @@ struct HongkiEditView: View {
                 TitleText(title: "e-mail")
                     .frame(maxWidth: .infinity, alignment: .leading)
                 TextField(hongkiVM.info.email, text: $hongkiVM.info.email)
+                    .foregroundColor(.gray)
                     .padding(.leading, 10)
             }
             .padding(.bottom, 5)
@@ -76,6 +80,7 @@ struct HongkiEditView: View {
                 TitleText(title: "Phone Number")
                     .frame(maxWidth: .infinity, alignment: .leading)
                 TextField(hongkiVM.info.phoneNum, text: $hongkiVM.info.phoneNum)
+                    .foregroundColor(.gray)
                     .padding(.leading, 10)
             }
             .padding(.bottom, 5)

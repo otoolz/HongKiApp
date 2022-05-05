@@ -37,7 +37,7 @@ struct HongkiView: View {
                         .padding(.leading, 10)
                     Text(hongkiVM.info.quotes)
                         .frame( maxWidth: .infinity, alignment: .center)
-                    .font(.title)
+                    .font(.title2)
                     Image(systemName: "quote.closing")
                         .padding(.trailing, 10)
                 }
@@ -54,7 +54,6 @@ struct HongkiView: View {
                         .padding(2)
                 }
                 .padding(.leading, 15)
-                .foregroundColor(Color("PureBlue"))
             
                 VStack {
                     Text("Achievement")
@@ -104,7 +103,7 @@ struct AchievementItem: View {
                     .font(.largeTitle)
                     .foregroundColor(Color(color))
                 Text("%")
-                    .padding(0)
+                    .padding(.bottom, 0)
                     .foregroundColor(Color("BlackCharcoal"))
             }
         }

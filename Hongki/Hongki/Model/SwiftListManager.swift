@@ -13,6 +13,7 @@ enum Swift: CaseIterable {
     case method
     case properties
     case concurrency
+    case codable
     
     var iconName: String {
         switch self {
@@ -21,6 +22,7 @@ enum Swift: CaseIterable {
         case .method : return "cube"
         case .properties : return "shippingbox.circle"
         case .concurrency : return "clock.badge.exclamationmark.fill"
+        case .codable : return "doc.badge.gearshape"
         }
     }
     
@@ -31,6 +33,7 @@ enum Swift: CaseIterable {
         case .method : return "InstanceMethod"
         case .properties : return "Computedproperties"
         case .concurrency : return "Async/Await"
+        case .codable : return "Codable"
         }
     }
     
@@ -41,6 +44,7 @@ enum Swift: CaseIterable {
         case .method : return "Let's study InstanceMethod"
         case .properties : return "Let's study Properties"
         case .concurrency : return "Let's study Async/Await"
+        case .codable : return "Encoding and Decoding your custum type"
         }
     }
     
@@ -51,6 +55,7 @@ enum Swift: CaseIterable {
         case .method : return "https://docs.swift.org/swift-book/LanguageGuide/Methods.html"
         case .properties : return "https://docs.swift.org/swift-book/LanguageGuide/Properties.html"
         case .concurrency : return "https://docs.swift.org/swift-book/LanguageGuide/Concurrency.html"
+        case .codable : return "https://developer.apple.com/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types"
         }
     }
 }
