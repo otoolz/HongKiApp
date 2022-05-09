@@ -161,6 +161,7 @@
 		A0CBFD7A281A53F90072C7B7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A0CBFD87281A5B1A0072C7B7 /* BaseTabView.swift */,
 				A0CBFD7B281A54430072C7B7 /* HomeView.swift */,
 				A0CBFD7F281A548D0072C7B7 /* SwiftListView.swift */,
 				A0CBFD7D281A54630072C7B7 /* SwiftUIListView.swift */,
@@ -169,7 +170,6 @@
 				A0E57AA32820F3A400A5363E /* GitDetailView.swift */,
 				A0CBFD85281A58770072C7B7 /* HongkiView.swift */,
 				A0BA902D281C18EB00EB67CC /* HongkiEditView.swift */,
-				A0CBFD87281A5B1A0072C7B7 /* BaseTabView.swift */,
 				A01E725E281B962800561268 /* TitleText.swift */,
 				A01E7260281B9FE500561268 /* RowView.swift */,
 				A04A7ED62822F02F00D3C1C5 /* LoadWebView.swift */,
